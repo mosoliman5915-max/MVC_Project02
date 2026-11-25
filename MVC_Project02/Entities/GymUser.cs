@@ -1,4 +1,6 @@
-﻿namespace MVC_Project02.Entities
+﻿using MVC_Project02.Entities.Enums;
+
+namespace MVC_Project02.Entities
 {
     public abstract class GymUser:BaseEntity
     {

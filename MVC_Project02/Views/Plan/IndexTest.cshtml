@@ -1,0 +1,38 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+	string PageTitle = "Route Academy";
+
+	int age=22;
+	List<int> numbers = new List<int> { 1, 2, 3, 4, 5 };
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title> @PageTitle</title>
+</head>
+<body> 
+
+<h1>Welcome to route</h1>
+<h2> @PageTitle</h2>
+<p> Age: @age</p>
+
+
+
+	@if (age > 18)
+		{
+			<p> tou are adult </p>
+		}
+		else
+		{
+			<p>You are not an adult.</p>
+		}
+
+
+<a asp-controller="Home" asp-action="Index">Home</a>
+	</body>
+
+</html>
